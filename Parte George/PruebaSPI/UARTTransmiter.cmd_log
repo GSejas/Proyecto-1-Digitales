@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PruebaSPIReading.ucf -p xc3s500e-fg320-4 "UARTTransmiter.ngc" UARTTransmiter.ngd  
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PruebaSPIReading.ucf -p xc3s500e-fg320-4 "UARTTransmiter.ngc" UARTTransmiter.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -u -c 100 -o UARTTransmiter_map.ncd UARTTransmiter.ngd UARTTransmiter.pcf 
+par -w -intstyle ise -ol high -t 1 UARTTransmiter_map.ncd UARTTransmiter.ncd UARTTransmiter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UARTTransmiter.twx UARTTransmiter.ncd -o UARTTransmiter.twr UARTTransmiter.pcf -ucf PruebaSPIReading.ucf 
+bitgen -intstyle ise -f UARTTransmiter.ut UARTTransmiter.ncd 
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PruebaSPIReading.ucf -p xc3s500e-fg320-4 "UARTTransmiter.ngc" UARTTransmiter.ngd  
+xst -intstyle ise -ifn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.xst" -ofn "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/UARTTransmiter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PruebaSPIReading.ucf -p xc3s500e-fg320-4 "UARTTransmiter.ngc" UARTTransmiter.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -u -c 100 -o UARTTransmiter_map.ncd UARTTransmiter.ngd UARTTransmiter.pcf 
+par -w -intstyle ise -ol high -t 1 UARTTransmiter_map.ncd UARTTransmiter.ncd UARTTransmiter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml UARTTransmiter.twx UARTTransmiter.ncd -o UARTTransmiter.twr UARTTransmiter.pcf -ucf PruebaSPIReading.ucf 
+bitgen -intstyle ise -f UARTTransmiter.ut UARTTransmiter.ncd 

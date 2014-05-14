@@ -1,0 +1,43 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/prueba_isim_beh.exe -prj C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/prueba_beh.prj work.prueba work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/sumador.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/restador.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/registro8bits.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/registro16bits.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/multiplicador.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/restador16bits.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/P.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/I.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/D.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/PIDgeneral.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/cuentatiempos.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/controldelPID.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/todoPID.v" into library work
+Analyzing Verilog file "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/prueba.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module multiplicador
+Compiling module registro16bits
+Compiling module P
+Compiling module restador8bits
+Compiling module sumador16bits
+Compiling module I
+Compiling module restador16bits
+Compiling module registro8bits
+Compiling module D
+Compiling module PIDgeneral
+Compiling module controldelPID
+Compiling module cuentatiempos
+Compiling module todoPID
+Compiling module prueba
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 15 Verilog Units
+Built simulation executable C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/PIDterminado/prueba_isim_beh.exe
+Fuse Memory Usage: 27256 KB
+Fuse CPU Usage: 514 ms

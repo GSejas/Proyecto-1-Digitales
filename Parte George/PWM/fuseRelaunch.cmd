@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/Parte George/PWM/Test_PWM_isim_beh.exe" -prj "C:/Users/GSejas/Dropbox/Lab digitales/Proyecto 1/Parte George/PWM/Test_PWM_beh.prj" "work.Test_PWM" "work.glbl" 

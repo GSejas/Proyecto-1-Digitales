@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat May 10 15:02:13 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DAC_CS" LOCATE = SITE "N8" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "TxD" LOCATE = SITE "M14" LEVEL 1;
+COMP "MISO" LOCATE = SITE "N10" LEVEL 1;
+COMP "SPI_SS_B" LOCATE = SITE "U3" LEVEL 1;
+COMP "SF_CE" LOCATE = SITE "D16" LEVEL 1;
+COMP "AMP_Shunt" LOCATE = SITE "P7" LEVEL 1;
+COMP "MOSI" LOCATE = SITE "T4" LEVEL 1;
+COMP "CS_AMP" LOCATE = SITE "N7" LEVEL 1;
+COMP "ADC_Conv" LOCATE = SITE "P11" LEVEL 1;
+COMP "FPGA_INIT_B" LOCATE = SITE "T3" LEVEL 1;
+COMP "SPI_CLK" LOCATE = SITE "U16" LEVEL 1;
+COMP "rst" LOCATE = SITE "V4" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

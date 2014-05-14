@@ -1,0 +1,30 @@
+Command line:
+   Prueba_PruebaSPITx_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52384
+
+Sat May 10 14:10:54 2014
+
+
+ Elaboration Time: 0.046801 sec
+
+ Current Memory Usage: 667.922 Meg
+
+ Total Signals          : 126
+ Total Nets             : 100
+ Total Signal Drivers   : 44
+ Total Blocks           : 19
+ Total Primitive Blocks : 13
+ Total Processes        : 64
+ Total Traceable Variables  : 70
+ Total Scalar Nets and Variables : 864
+Total Line Count : 186
+Total Line Count : 186
+
+ Total Simulation Time: 33.2438 sec
+
+ Current Memory Usage: 667.922 Meg
+
+Sat May 10 14:14:19 2014
+

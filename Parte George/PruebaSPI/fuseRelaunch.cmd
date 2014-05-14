@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/Prueba_PruebaSPITx_isim_beh.exe" -prj "C:/Users/GSejas/Dropbox/Lab digitales/New/PruebaSPI/Prueba_PruebaSPITx_beh.prj" "work.Prueba_PruebaSPITx" "work.glbl" 

@@ -1,0 +1,405 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: PWMFbase12k.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PWMFbase12k.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PWMFbase12k"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : PWMFbase12k
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FFJK.v" in library work
+Compiling verilog file "Cont12b.v" in library work
+Module <FFJK> compiled
+Compiling verilog file "PWMFbase12k.v" in library work
+Module <Conta12b> compiled
+Module <PWMFbase12k> compiled
+No errors in compilation
+Analysis of file <"PWMFbase12k.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <PWMFbase12k> in library <work>.
+
+Analyzing hierarchy for module <Conta12b> in library <work> with parameters.
+	LARGO = "00000000000000000000000000001100"
+
+Analyzing hierarchy for module <FFJK> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PWMFbase12k>.
+Module <PWMFbase12k> is correct for synthesis.
+ 
+Analyzing module <Conta12b> in library <work>.
+	LARGO = 32'sb00000000000000000000000000001100
+Module <Conta12b> is correct for synthesis.
+ 
+Analyzing module <FFJK> in library <work>.
+Module <FFJK> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Conta12b>.
+    Related source file is "Cont12b.v".
+    Found 12-bit up counter for signal <cuenta>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Conta12b> synthesized.
+
+
+Synthesizing Unit <FFJK>.
+    Related source file is "FFJK.v".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FFJK> synthesized.
+
+
+Synthesizing Unit <PWMFbase12k>.
+    Related source file is "PWMFbase12k.v".
+WARNING:Xst:646 - Signal <cuenta<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit comparator equal for signal <ValJ>.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <PWMFbase12k> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PWMFbase12k> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PWMFbase12k, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PWMFbase12k.ngr
+Top Level Output File Name         : PWMFbase12k
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 47
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 11
+#      LUT3                        : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 4
+#      LUT4_L                      : 2
+#      MUXCY                       : 11
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 13
+#      FDC                         : 12
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 9
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       14  out of   4656     0%  
+ Number of Slice Flip Flops:             13  out of   9312     0%  
+ Number of 4 input LUTs:                 22  out of   9312     0%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 12    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.982ns (Maximum Frequency: 111.334MHz)
+   Minimum input arrival time before clock: 4.792ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.982ns (frequency: 111.334MHz)
+  Total number of paths / destination ports: 96 / 14
+-------------------------------------------------------------------------
+Delay:               4.491ns (Levels of Logic = 2)
+  Source:            Conta1/cuenta_6 (FF)
+  Destination:       JK/Q (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: Conta1/cuenta_6 to JK/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  Conta1/cuenta_6 (Conta1/cuenta_6)
+     LUT4:I0->O            1   0.704   0.455  JK/D25 (JK/D25)
+     LUT3:I2->O            1   0.704   0.420  JK/D38 (JK/D38)
+     FDS:S                     0.911          JK/Q
+    ----------------------------------------
+    Total                      4.491ns (2.910ns logic, 1.581ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Offset:              4.792ns (Levels of Logic = 4)
+  Source:            CompDat<3> (PAD)
+  Destination:       JK/Q (FF)
+  Destination Clock: clk rising
+
+  Data Path: CompDat<3> to JK/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  CompDat_3_IBUF (CompDat_3_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.135  JK/D102 (JK/D102)
+     LUT3:I2->O            1   0.704   0.424  JK/D180_SW0 (N11)
+     LUT4:I3->O            1   0.704   0.000  JK/D2051 (JK/D205)
+     FDS:D                     0.308          JK/Q
+    ----------------------------------------
+    Total                      4.792ns (3.638ns logic, 1.154ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            JK/Q (FF)
+  Destination:       PWM (PAD)
+  Source Clock:      clk rising
+
+  Data Path: JK/Q to PWM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.591   0.531  JK/Q (JK/Q)
+     OBUF:I->O                 3.272          PWM_OBUF (PWM)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.29 secs
+ 
+--> 
+
+Total memory usage is 254440 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
